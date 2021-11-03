@@ -114,3 +114,7 @@ input {
   margin: 20px 20px;
   color: #113f67;
 }
+.open-source {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+}
