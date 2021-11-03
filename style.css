@@ -28,7 +28,7 @@ h2,
 h3,
 p {
   text-align: center;
-  display: block;
+
   color: #113f67;
 }
 
@@ -115,6 +115,7 @@ input {
   color: #113f67;
 }
 .open-source {
-  font-family: "Roboto Condensed", sans-serif;
+  display: block;
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
