@@ -4,16 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
   </head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script
+    src="https://kit.fontawesome.com/4693397afb.js"
+    crossorigin="anonymous"
+  ></script>
+
   <body>
-    <h1>Hello Git</h1>
-    <form>
-      <input type="email" placeholder="Enter your email" />
-      <input type="password" placeholder="Enter your password" />
-      <input type="submit" value="Login" />
-    </form>
+    <div class="container">
+      <div class="card">
+        <form class="search-bar" id="search-form">
+          <input
+            type="text"
+            id="city-input"
+            autocomplete="off"
+            placeholder="Please enter a city"
+          />
+          <input type="submit" value="Go !" id="go" />
+          <button id="locationButton">
+            <i class="fas fa-search-location"></i> Current Location
+          </button>
+        </form>
+
+        <h2>Roseville</h2>
+        <p id="date">Thursday 14th October 10:30</p>
+        <div col="6">
+          <h1>17°C</h1>
+        </div>
+        <h3><i class="fas fa-sun sunny"></i> Sunny</h3>
+        <div class="humidityWind">
+          <div id="humidity">Humidity: 89%</div>
+          <div id="wind">Wind: 12kmh</div>
+        </div>
+        <div class="weekly">
+          <div class="row row-cols-5">
+            <div class="col">Fri</div>
+            <div class="col">Mon</div>
+            <div class="col">Tue</div>
+            <div class="col">Wed</div>
+            <div class="col">Thu</div>
+          </div>
+
+          <div class="row row-cols-5">
+            <div class="col"><i class="fas fa-sun sunny"></i></div>
+            <div class="col"><i class="fas fa-sun sunny"></i></div>
+            <div class="col"><i class="fas fa-cloud cloudy"></i></div>
+            <div class="col"><i class="fas fa-smog smog"></i></div>
+            <div class="col"><i class="fas fa-sun sunny"></i></div>
+          </div>
+
+          <div class="row row-cols-5">
+            <div class="col">16/21℃</div>
+            <div class="col">13/20℃</div>
+            <div class="col">11/20℃</div>
+            <div class="col">12/19℃</div>
+            <div class="col">13/20℃</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
